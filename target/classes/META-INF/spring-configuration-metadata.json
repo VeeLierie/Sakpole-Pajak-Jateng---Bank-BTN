@@ -1,0 +1,33 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "id.co.hanoman.config.YAMLConfig",
+      "name": "sakpole",
+      "type": "id.co.hanoman.config.YAMLConfig"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "id.co.hanoman.config.YAMLConfig",
+      "name": "sakpole.api-key",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "id.co.hanoman.config.YAMLConfig",
+      "name": "sakpole.base-url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "id.co.hanoman.config.YAMLConfig",
+      "defaultValue": 0,
+      "name": "sakpole.timeout",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "id.co.hanoman.config.YAMLConfig",
+      "name": "sakpole.user-id",
+      "type": "java.lang.String"
+    }
+  ]
+}

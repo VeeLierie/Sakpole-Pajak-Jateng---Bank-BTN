@@ -1,0 +1,40 @@
+# prefix for all requests
+server:
+   port: 8095
+logging:
+   level:
+      org.springframework.web: INFO
+      id.co.hanoman.controllers: DEBUG
+      org.hibernate: ERROR
+   file: logs/spring-boot-logging.log
+spring:
+  profiles:
+    active: "dev"
+
+
+---
+
+spring:
+    profiles: prod
+name: prod-YAML
+environment: production
+sakpole:
+    apiKey: BEKKYYK8mfBiyQL4wwYkt2GvaSD8iWczNADTr8ElNYGKTqw8lRZ20MVPrcSq
+    timeout: 20000
+    baseUrl: http://psibppdjateng.web.id:95/api/
+
+---
+
+spring:
+    profiles: dev
+name: dev-YAML
+environment: development
+sakpole:
+    apiKey: BEKKYYK8mfBiyQL4wwYkt2GvaSD8iWczNADTr8ElNYGKTqw8lRZ20MVPrcSq
+    timeout: 20000
+    baseUrl: http://psibppdjateng.web.id:95/api/
+   
+    
+    
+    
+    
