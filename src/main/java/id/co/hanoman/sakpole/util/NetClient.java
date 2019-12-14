@@ -105,6 +105,7 @@ public class NetClient {
 	}
 
 	static final long ONE_MINUTE_IN_MILLIS=60000;//millisecs = 1 min
+
 	private  static String getTimeStamp(){
 		String pattern = "yyyyMMddHHmmss";
 		
@@ -146,7 +147,9 @@ public class NetClient {
 		try {
 			
 			String enCode = Encrypt(data);
-		
+			String reqNode = "{\"code\":\""+data+"\"}";
+			
+			
 			String request = "{\"code\":\""+enCode+"\",\"key_id\":\"200\"}";
 			log.info("request  :"+ request);
 			
@@ -174,7 +177,7 @@ public class NetClient {
 						log.info("message:"+message);
 				ObjectMapper mapper = new ObjectMapper();
 				JsonNode resJson = mapper.readTree(message);
-				JsonNode reqJson = mapper.readTree(request);
+				JsonNode reqJson = mapper.readTree(reqNode);
 				Response resp = new Response();
 				resp.setRequest(reqJson);
 				resp.setResponse(resJson);
@@ -186,10 +189,11 @@ public class NetClient {
 						log.info("message:"+message);
 				ObjectMapper mapper = new ObjectMapper();
 				JsonNode resJson = mapper.readTree(message);
-				JsonNode reqJson = mapper.readTree(request);
+				JsonNode reqJson = mapper.readTree(reqNode);
+				JsonNode resJson_array = resJson.get("_res_array");
 				Response resp = new Response();
 				resp.setRequest(reqJson);
-				resp.setResponse(resJson);
+				resp.setResponse(resJson_array);
 				return resp;
 			}
 			

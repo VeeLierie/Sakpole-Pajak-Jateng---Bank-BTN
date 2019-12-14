@@ -20,7 +20,6 @@
     },
     {
       "sourceType": "id.co.hanoman.config.YAMLConfig",
-      "defaultValue": 0,
       "name": "sakpole.timeout",
       "type": "java.lang.Integer"
     },
