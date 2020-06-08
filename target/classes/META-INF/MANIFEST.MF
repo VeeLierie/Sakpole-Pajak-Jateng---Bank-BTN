@@ -1,9 +1,9 @@
 Manifest-Version: 1.0
 Implementation-Title: sakpole
 Implementation-Version: 0.1.0
-Built-By: Admin
+Built-By: Luis
 Implementation-Vendor-Id: org.springframework
-Build-Jdk: 1.8.0_202
+Build-Jdk: 1.8.0_172
 Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
  ot-starter-parent/sakpole
 Created-By: Maven Integration for Eclipse

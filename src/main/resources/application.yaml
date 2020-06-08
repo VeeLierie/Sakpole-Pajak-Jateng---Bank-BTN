@@ -32,7 +32,7 @@ environment: development
 sakpole:
     apiKey: BEKKYYK8mfBiyQL4wwYkt2GvaSD8iWczNADTr8ElNYGKTqw8lRZ20MVPrcSq
     timeout: 20000
-    baseUrl: http://psibppdjateng.web.id:95/api/
+    baseUrl: http://psibppdjateng.web.id:81/serviceh2hpaymentsakpole/api/
    
     
     
